@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3D3B04642BDF015800D0B013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B04632BDF015800D0B013 /* AppDelegate.swift */; };
-		3D3B04682BDF015800D0B013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B04672BDF015800D0B013 /* ViewController.swift */; };
+		3D3B04682BDF015800D0B013 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B04672BDF015800D0B013 /* QuotesViewController.swift */; };
 		3D3B046D2BDF015900D0B013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B046C2BDF015900D0B013 /* Assets.xcassets */; };
-		3D3B04702BDF015900D0B013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B046E2BDF015900D0B013 /* LaunchScreen.storyboard */; };
 		3D3B047B2BDF015900D0B013 /* TradernetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B047A2BDF015900D0B013 /* TradernetTests.swift */; };
 		3D3B04852BDF015900D0B013 /* TradernetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B04842BDF015900D0B013 /* TradernetUITests.swift */; };
 		3D3B04872BDF015900D0B013 /* TradernetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B04862BDF015900D0B013 /* TradernetUITestsLaunchTests.swift */; };
+		3DAB25F92BE1995A0031A7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAB25F82BE1995A0031A7CF /* LaunchScreen.storyboard */; };
+		3DAB25FC2BE19AA60031A7CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DAB25FE2BE19AA60031A7CF /* Localizable.strings */; };
 		3DDA57512BDF0C9100B3204F /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 3DDA57502BDF0C9100B3204F /* Starscream */; };
 		3DDA57542BDF12CA00B3204F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3DDA57532BDF12CA00B3204F /* SnapKit */; };
 /* End PBXBuildFile section */
@@ -38,15 +39,18 @@
 /* Begin PBXFileReference section */
 		3D3B04602BDF015800D0B013 /* Tradernet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradernet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3B04632BDF015800D0B013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D3B04672BDF015800D0B013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D3B04672BDF015800D0B013 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		3D3B046C2BDF015900D0B013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3D3B046F2BDF015900D0B013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3B04712BDF015900D0B013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3B04762BDF015900D0B013 /* TradernetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradernetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3B047A2BDF015900D0B013 /* TradernetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradernetTests.swift; sourceTree = "<group>"; };
 		3D3B04802BDF015900D0B013 /* TradernetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradernetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3B04842BDF015900D0B013 /* TradernetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradernetUITests.swift; sourceTree = "<group>"; };
 		3D3B04862BDF015900D0B013 /* TradernetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradernetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DAB25ED2BE157D40031A7CF /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		3DAB25F82BE1995A0031A7CF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DAB25FD2BE19AA60031A7CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DAB25FF2BE19AAA0031A7CF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				3D3B04632BDF015800D0B013 /* AppDelegate.swift */,
-				3D3B04672BDF015800D0B013 /* ViewController.swift */,
-				3D3B046C2BDF015900D0B013 /* Assets.xcassets */,
-				3D3B046E2BDF015900D0B013 /* LaunchScreen.storyboard */,
-				3D3B04712BDF015900D0B013 /* Info.plist */,
+				3DAB26002BE19F480031A7CF /* Quotes */,
+				3DAB25EE2BE157E00031A7CF /* Resources */,
 			);
 			path = Tradernet;
 			sourceTree = "<group>";
@@ -124,6 +126,26 @@
 				3D3B04862BDF015900D0B013 /* TradernetUITestsLaunchTests.swift */,
 			);
 			path = TradernetUITests;
+			sourceTree = "<group>";
+		};
+		3DAB25EE2BE157E00031A7CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D3B046C2BDF015900D0B013 /* Assets.xcassets */,
+				3DAB25ED2BE157D40031A7CF /* Config.xcconfig */,
+				3D3B04712BDF015900D0B013 /* Info.plist */,
+				3DAB25F82BE1995A0031A7CF /* LaunchScreen.storyboard */,
+				3DAB25FE2BE19AA60031A7CF /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DAB26002BE19F480031A7CF /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				3D3B04672BDF015800D0B013 /* QuotesViewController.swift */,
+			);
+			path = Quotes;
 			sourceTree = "<group>";
 		};
 		3DDA57522BDF12CA00B3204F /* Frameworks */ = {
@@ -221,8 +243,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
+				ru,
 			);
 			mainGroup = 3D3B04572BDF015800D0B013;
 			packageReferences = (
@@ -245,7 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D3B04702BDF015900D0B013 /* LaunchScreen.storyboard in Resources */,
+				3DAB25F92BE1995A0031A7CF /* LaunchScreen.storyboard in Resources */,
+				3DAB25FC2BE19AA60031A7CF /* Localizable.strings in Resources */,
 				3D3B046D2BDF015900D0B013 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D3B04682BDF015800D0B013 /* ViewController.swift in Sources */,
+				3D3B04682BDF015800D0B013 /* QuotesViewController.swift in Sources */,
 				3D3B04642BDF015800D0B013 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,12 +333,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D3B046E2BDF015900D0B013 /* LaunchScreen.storyboard */ = {
+		3DAB25FE2BE19AA60031A7CF /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3D3B046F2BDF015900D0B013 /* Base */,
+				3DAB25FD2BE19AA60031A7CF /* en */,
+				3DAB25FF2BE19AAA0031A7CF /* ru */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -325,6 +350,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -372,8 +398,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -388,6 +415,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -429,8 +457,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -441,25 +470,25 @@
 		};
 		3D3B048B2BDF015900D0B013 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAB25ED2BE157D40031A7CF /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5PZDUPSM9U;
+				CURRENT_PROJECT_VERSION = "$(APP_BUILD)";
+				DEVELOPMENT_TEAM = 8U9578N5G7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Tradernet/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Tradernet;
+				INFOPLIST_FILE = Tradernet/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "${APP_NAME}";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(APP_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = alexander.karpenko.Tradernet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -473,25 +502,25 @@
 		};
 		3D3B048C2BDF015900D0B013 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAB25ED2BE157D40031A7CF /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5PZDUPSM9U;
+				CURRENT_PROJECT_VERSION = "$(APP_BUILD)";
+				DEVELOPMENT_TEAM = 8U9578N5G7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Tradernet/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Tradernet;
+				INFOPLIST_FILE = Tradernet/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "${APP_NAME}";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(APP_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = alexander.karpenko.Tradernet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -512,6 +541,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5PZDUPSM9U;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = alexander.karpenko.TradernetTests;
@@ -532,6 +562,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5PZDUPSM9U;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = alexander.karpenko.TradernetTests;
@@ -551,6 +582,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5PZDUPSM9U;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = alexander.karpenko.TradernetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -569,6 +601,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5PZDUPSM9U;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = alexander.karpenko.TradernetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

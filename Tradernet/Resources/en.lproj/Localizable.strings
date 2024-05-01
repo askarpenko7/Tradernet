@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Tradernet
+
+  Created by Alexander Karpenko on 30.04.2024.
+  
+*/
+
+"yes" = "Yes";
+"no" = "No";
+"cancel" = "Cancel";

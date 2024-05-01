@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         guard let window = window else { return true }
         
-        let viewController = ViewController()
+        let viewController = QuotesViewController()
         window.rootViewController = viewController
         
         window.makeKeyAndVisible()

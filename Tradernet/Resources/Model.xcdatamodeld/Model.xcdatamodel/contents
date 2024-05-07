@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22222" systemVersion="23E224" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Quote" representedClassName="QuoteMO" syncable="YES" codeGenerationType="class">
+        <attribute name="lastTradePrice" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="latestTradeExchange" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="percentageChangeDirection" attributeType="String" defaultValueString="none"/>
+        <attribute name="percentageChangeFromPreviousClose" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="priceChangePoints" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ticker" attributeType="String"/>
+        <fetchIndex name="byTickerIndex">
+            <fetchIndexElement property="ticker" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+</model>

@@ -11,19 +11,77 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
+    private lazy var repository: QuotesRepositoryContract = {
+        let quotesWebSocketManager = QuotesWebSocketManager()
+        let storageManager = QuotesStorageManager()
+        return QuotesRepository(webSocketManager: quotesWebSocketManager, storageManager: storageManager)
+    }()
+
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
+
         guard let window = window else { return true }
-        
-        let viewController = QuotesViewController()
-        window.rootViewController = viewController
-        
+
+        if isFirstLaunch() {
+            let tickers = fetchPreloadedData()
+            repository.save(tickers: tickers)
+        }
+
+        let viewModel = QuotesViewModel(repository: repository)
+        let viewController = QuotesViewController(viewModel: viewModel)
+        let navigationController = UINavigationController(rootViewController: viewController)
+
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .mainBackground
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.primaryText]
+            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.primaryText]
+
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().compactAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        } else {
+            UINavigationBar.appearance().barTintColor = .mainBackground
+            UINavigationBar.appearance().tintColor = .systemBlue
+            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.primaryText]
+            UINavigationBar.appearance().isTranslucent = false
+        }
+
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
 
         return true
     }
-}
 
+    // MARK: Preload data
+
+    func isFirstLaunch() -> Bool {
+        let hasLaunched = UserDefaults.standard.bool(forKey: "hasLaunchedBefore")
+        if !hasLaunched {
+            UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+            UserDefaults.standard.synchronize()
+            return true
+        }
+        return false
+    }
+
+    private func fetchPreloadedData() -> [String] {
+        guard let url = Bundle.main.url(forResource: "preloaded_data", withExtension: "json"),
+              let data = try? Data(contentsOf: url)
+        else {
+            return []
+        }
+
+        do {
+            let tickers = try JSONDecoder().decode([String].self, from: data)
+            return tickers
+        } catch {
+            print("Failed to decode tickers: \(error)")
+            return []
+        }
+    }
+}

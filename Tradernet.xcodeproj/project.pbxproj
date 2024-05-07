@@ -13,8 +13,42 @@
 		3D3B047B2BDF015900D0B013 /* TradernetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B047A2BDF015900D0B013 /* TradernetTests.swift */; };
 		3D3B04852BDF015900D0B013 /* TradernetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B04842BDF015900D0B013 /* TradernetUITests.swift */; };
 		3D3B04872BDF015900D0B013 /* TradernetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B04862BDF015900D0B013 /* TradernetUITestsLaunchTests.swift */; };
+		3D8A02212BEA4E1600204500 /* LifeCycleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A02202BEA4E1600204500 /* LifeCycleEvent.swift */; };
+		3D8A02252BEA5B1F00204500 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A02242BEA5B1F00204500 /* LocalizedString.swift */; };
+		3D8D99832BE450B700E04AA3 /* QuoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99822BE450B700E04AA3 /* QuoteEntity.swift */; };
+		3D8D998C2BE4863400E04AA3 /* QuoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D998B2BE4863400E04AA3 /* QuoteResponse.swift */; };
+		3D8D99902BE548B200E04AA3 /* QuoteProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D998F2BE548B200E04AA3 /* QuoteProviders.swift */; };
+		3D8D99922BE548EE00E04AA3 /* QuotesWebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99912BE548EE00E04AA3 /* QuotesWebSocketManager.swift */; };
+		3D8D99952BE56B6A00E04AA3 /* QuotesStorageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99942BE56B6A00E04AA3 /* QuotesStorageContract.swift */; };
+		3D8D99972BE6752F00E04AA3 /* QuotesStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99962BE6752F00E04AA3 /* QuotesStorageManager.swift */; };
+		3D8D99992BE67A6A00E04AA3 /* QuotesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99982BE67A6A00E04AA3 /* QuotesRepository.swift */; };
+		3D8D999B2BE67A7D00E04AA3 /* QuotesRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D999A2BE67A7D00E04AA3 /* QuotesRepositoryContract.swift */; };
+		3D8D99A02BE6849900E04AA3 /* DLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D999F2BE6849900E04AA3 /* DLError.swift */; };
+		3D8D99A32BE6E49200E04AA3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99A22BE6E49200E04AA3 /* CoreDataManager.swift */; };
+		3D8D99A52BE6E50900E04AA3 /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99A42BE6E50900E04AA3 /* QuotesViewModel.swift */; };
+		3D8D99A72BE6E5D100E04AA3 /* QuotesViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99A62BE6E5D100E04AA3 /* QuotesViewModelContract.swift */; };
+		3D8D99AB2BE6EDC300E04AA3 /* QuotesViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99AA2BE6EDC300E04AA3 /* QuotesViewContract.swift */; };
+		3D8D99B02BE7A1AB00E04AA3 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99AF2BE7A1AB00E04AA3 /* QuoteCell.swift */; };
+		3D8D99B22BE7A21300E04AA3 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99B12BE7A21300E04AA3 /* QuoteModel.swift */; };
+		3D8D99B52BE7ABB600E04AA3 /* preloaded_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D8D99B42BE7ABB600E04AA3 /* preloaded_data.json */; };
+		3D8D99BB2BE83F2500E04AA3 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99BA2BE83F2500E04AA3 /* PercentView.swift */; };
+		3D8D99BD2BE85EA800E04AA3 /* QuoteLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99BC2BE85EA800E04AA3 /* QuoteLogoView.swift */; };
+		3D8D99BF2BE8FA5100E04AA3 /* SwipeableCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99BE2BE8FA5100E04AA3 /* SwipeableCollectionViewCellDelegate.swift */; };
+		3D8D99C12BE8FBDB00E04AA3 /* SwipeableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99C02BE8FBDB00E04AA3 /* SwipeableCollectionViewCell.swift */; };
+		3D8D99C52BE9166A00E04AA3 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99C42BE9166A00E04AA3 /* ToastView.swift */; };
+		3D8D99C82BE9332D00E04AA3 /* TickersViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99C72BE9332D00E04AA3 /* TickersViewContract.swift */; };
+		3D8D99CA2BE9333B00E04AA3 /* TickersViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99C92BE9333B00E04AA3 /* TickersViewModelContract.swift */; };
+		3D8D99CC2BE9334700E04AA3 /* TickersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99CB2BE9334700E04AA3 /* TickersViewModel.swift */; };
+		3D8D99CE2BE9335200E04AA3 /* TickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99CD2BE9335200E04AA3 /* TickersViewController.swift */; };
+		3D8D99D02BE9336400E04AA3 /* TickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99CF2BE9336400E04AA3 /* TickerCell.swift */; };
+		3D8D99D42BE933A500E04AA3 /* TickerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99D32BE933A500E04AA3 /* TickerProvider.swift */; };
+		3D8D99D62BE933AF00E04AA3 /* TickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99D52BE933AF00E04AA3 /* TickerManager.swift */; };
+		3D8D99DA2BE93D0300E04AA3 /* TickerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99D92BE93D0300E04AA3 /* TickerRepository.swift */; };
+		3D8D99DC2BE93D1200E04AA3 /* TickerRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99DB2BE93D1200E04AA3 /* TickerRepositoryContract.swift */; };
 		3DAB25F92BE1995A0031A7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAB25F82BE1995A0031A7CF /* LaunchScreen.storyboard */; };
 		3DAB25FC2BE19AA60031A7CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DAB25FE2BE19AA60031A7CF /* Localizable.strings */; };
+		3DAB26022BE236440031A7CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAB26012BE236440031A7CF /* CoreData.framework */; };
+		3DAB26052BE237450031A7CF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB26032BE237450031A7CF /* Model.xcdatamodeld */; };
 		3DDA57512BDF0C9100B3204F /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 3DDA57502BDF0C9100B3204F /* Starscream */; };
 		3DDA57542BDF12CA00B3204F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3DDA57532BDF12CA00B3204F /* SnapKit */; };
 /* End PBXBuildFile section */
@@ -47,10 +81,44 @@
 		3D3B04802BDF015900D0B013 /* TradernetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradernetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3B04842BDF015900D0B013 /* TradernetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradernetUITests.swift; sourceTree = "<group>"; };
 		3D3B04862BDF015900D0B013 /* TradernetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradernetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D8A02202BEA4E1600204500 /* LifeCycleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleEvent.swift; sourceTree = "<group>"; };
+		3D8A02242BEA5B1F00204500 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		3D8D99822BE450B700E04AA3 /* QuoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteEntity.swift; sourceTree = "<group>"; };
+		3D8D998B2BE4863400E04AA3 /* QuoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteResponse.swift; sourceTree = "<group>"; };
+		3D8D998F2BE548B200E04AA3 /* QuoteProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteProviders.swift; sourceTree = "<group>"; };
+		3D8D99912BE548EE00E04AA3 /* QuotesWebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesWebSocketManager.swift; sourceTree = "<group>"; };
+		3D8D99942BE56B6A00E04AA3 /* QuotesStorageContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesStorageContract.swift; sourceTree = "<group>"; };
+		3D8D99962BE6752F00E04AA3 /* QuotesStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesStorageManager.swift; sourceTree = "<group>"; };
+		3D8D99982BE67A6A00E04AA3 /* QuotesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesRepository.swift; sourceTree = "<group>"; };
+		3D8D999A2BE67A7D00E04AA3 /* QuotesRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesRepositoryContract.swift; sourceTree = "<group>"; };
+		3D8D999F2BE6849900E04AA3 /* DLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLError.swift; sourceTree = "<group>"; };
+		3D8D99A22BE6E49200E04AA3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3D8D99A42BE6E50900E04AA3 /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		3D8D99A62BE6E5D100E04AA3 /* QuotesViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModelContract.swift; sourceTree = "<group>"; };
+		3D8D99AA2BE6EDC300E04AA3 /* QuotesViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewContract.swift; sourceTree = "<group>"; };
+		3D8D99AF2BE7A1AB00E04AA3 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		3D8D99B12BE7A21300E04AA3 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		3D8D99B42BE7ABB600E04AA3 /* preloaded_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = preloaded_data.json; path = ../../../../Desktop/preloaded_data.json; sourceTree = "<group>"; };
+		3D8D99BA2BE83F2500E04AA3 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
+		3D8D99BC2BE85EA800E04AA3 /* QuoteLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteLogoView.swift; sourceTree = "<group>"; };
+		3D8D99BE2BE8FA5100E04AA3 /* SwipeableCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
+		3D8D99C02BE8FBDB00E04AA3 /* SwipeableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D8D99C42BE9166A00E04AA3 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		3D8D99C72BE9332D00E04AA3 /* TickersViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersViewContract.swift; sourceTree = "<group>"; };
+		3D8D99C92BE9333B00E04AA3 /* TickersViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersViewModelContract.swift; sourceTree = "<group>"; };
+		3D8D99CB2BE9334700E04AA3 /* TickersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersViewModel.swift; sourceTree = "<group>"; };
+		3D8D99CD2BE9335200E04AA3 /* TickersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersViewController.swift; sourceTree = "<group>"; };
+		3D8D99CF2BE9336400E04AA3 /* TickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerCell.swift; sourceTree = "<group>"; };
+		3D8D99D32BE933A500E04AA3 /* TickerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerProvider.swift; sourceTree = "<group>"; };
+		3D8D99D52BE933AF00E04AA3 /* TickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerManager.swift; sourceTree = "<group>"; };
+		3D8D99D92BE93D0300E04AA3 /* TickerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRepository.swift; sourceTree = "<group>"; };
+		3D8D99DB2BE93D1200E04AA3 /* TickerRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRepositoryContract.swift; sourceTree = "<group>"; };
 		3DAB25ED2BE157D40031A7CF /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		3DAB25F82BE1995A0031A7CF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DAB25FD2BE19AA60031A7CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3DAB25FF2BE19AAA0031A7CF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DAB26012BE236440031A7CF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3DAB26042BE237450031A7CF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DDA57512BDF0C9100B3204F /* Starscream in Frameworks */,
+				3DAB26022BE236440031A7CF /* CoreData.framework in Frameworks */,
 				3DDA57542BDF12CA00B3204F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,8 +174,11 @@
 			isa = PBXGroup;
 			children = (
 				3D3B04632BDF015800D0B013 /* AppDelegate.swift */,
+				3D8D99B62BE836F800E04AA3 /* Common */,
 				3DAB26002BE19F480031A7CF /* Quotes */,
+				3D8D998D2BE5483600E04AA3 /* Repository */,
 				3DAB25EE2BE157E00031A7CF /* Resources */,
+				3D8D99C62BE9331800E04AA3 /* Tickers */,
 			);
 			path = Tradernet;
 			sourceTree = "<group>";
@@ -128,14 +200,138 @@
 			path = TradernetUITests;
 			sourceTree = "<group>";
 		};
+		3D8A02222BEA540C00204500 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D99C72BE9332D00E04AA3 /* TickersViewContract.swift */,
+				3D8D99CD2BE9335200E04AA3 /* TickersViewController.swift */,
+				3D8D99CF2BE9336400E04AA3 /* TickerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D8A02232BEA541A00204500 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D99C92BE9333B00E04AA3 /* TickersViewModelContract.swift */,
+				3D8D99CB2BE9334700E04AA3 /* TickersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D8D998D2BE5483600E04AA3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D999F2BE6849900E04AA3 /* DLError.swift */,
+				3D8D99982BE67A6A00E04AA3 /* QuotesRepository.swift */,
+				3D8D999A2BE67A7D00E04AA3 /* QuotesRepositoryContract.swift */,
+				3D8D99D92BE93D0300E04AA3 /* TickerRepository.swift */,
+				3D8D99DB2BE93D1200E04AA3 /* TickerRepositoryContract.swift */,
+				3D8D99932BE5570A00E04AA3 /* Local */,
+				3D8D99A12BE6E3B500E04AA3 /* Models */,
+				3D8D998E2BE5484900E04AA3 /* Network */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3D8D998E2BE5484900E04AA3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D998F2BE548B200E04AA3 /* QuoteProviders.swift */,
+				3D8D99912BE548EE00E04AA3 /* QuotesWebSocketManager.swift */,
+				3D8D99D32BE933A500E04AA3 /* TickerProvider.swift */,
+				3D8D99D52BE933AF00E04AA3 /* TickerManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3D8D99932BE5570A00E04AA3 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D99942BE56B6A00E04AA3 /* QuotesStorageContract.swift */,
+				3D8D99962BE6752F00E04AA3 /* QuotesStorageManager.swift */,
+				3D8D99A22BE6E49200E04AA3 /* CoreDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		3D8D99A12BE6E3B500E04AA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D99822BE450B700E04AA3 /* QuoteEntity.swift */,
+				3D8D998B2BE4863400E04AA3 /* QuoteResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D8D99AC2BE7A17D00E04AA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D99AF2BE7A1AB00E04AA3 /* QuoteCell.swift */,
+				3D8D99AA2BE6EDC300E04AA3 /* QuotesViewContract.swift */,
+				3D3B04672BDF015800D0B013 /* QuotesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D8D99AD2BE7A18900E04AA3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D99A42BE6E50900E04AA3 /* QuotesViewModel.swift */,
+				3D8D99A62BE6E5D100E04AA3 /* QuotesViewModelContract.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D8D99B32BE7A21A00E04AA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D99B12BE7A21300E04AA3 /* QuoteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D8D99B62BE836F800E04AA3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D99B72BE8370C00E04AA3 /* Views */,
+				3D8A02242BEA5B1F00204500 /* LocalizedString.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3D8D99B72BE8370C00E04AA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D8D99BA2BE83F2500E04AA3 /* PercentView.swift */,
+				3D8D99BC2BE85EA800E04AA3 /* QuoteLogoView.swift */,
+				3D8D99BE2BE8FA5100E04AA3 /* SwipeableCollectionViewCellDelegate.swift */,
+				3D8D99C02BE8FBDB00E04AA3 /* SwipeableCollectionViewCell.swift */,
+				3D8D99C42BE9166A00E04AA3 /* ToastView.swift */,
+				3D8A02202BEA4E1600204500 /* LifeCycleEvent.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8D99C62BE9331800E04AA3 /* Tickers */ = {
+			isa = PBXGroup;
+			children = (
+				3D8A02222BEA540C00204500 /* View */,
+				3D8A02232BEA541A00204500 /* ViewModel */,
+			);
+			path = Tickers;
+			sourceTree = "<group>";
+		};
 		3DAB25EE2BE157E00031A7CF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3D8D99B42BE7ABB600E04AA3 /* preloaded_data.json */,
 				3D3B046C2BDF015900D0B013 /* Assets.xcassets */,
 				3DAB25ED2BE157D40031A7CF /* Config.xcconfig */,
 				3D3B04712BDF015900D0B013 /* Info.plist */,
 				3DAB25F82BE1995A0031A7CF /* LaunchScreen.storyboard */,
 				3DAB25FE2BE19AA60031A7CF /* Localizable.strings */,
+				3DAB26032BE237450031A7CF /* Model.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -143,7 +339,9 @@
 		3DAB26002BE19F480031A7CF /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
-				3D3B04672BDF015800D0B013 /* QuotesViewController.swift */,
+				3D8D99B32BE7A21A00E04AA3 /* Model */,
+				3D8D99AC2BE7A17D00E04AA3 /* View */,
+				3D8D99AD2BE7A18900E04AA3 /* ViewModel */,
 			);
 			path = Quotes;
 			sourceTree = "<group>";
@@ -151,6 +349,7 @@
 		3DDA57522BDF12CA00B3204F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DAB26012BE236440031A7CF /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,6 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8D99B52BE7ABB600E04AA3 /* preloaded_data.json in Resources */,
 				3DAB25F92BE1995A0031A7CF /* LaunchScreen.storyboard in Resources */,
 				3DAB25FC2BE19AA60031A7CF /* Localizable.strings in Resources */,
 				3D3B046D2BDF015900D0B013 /* Assets.xcassets in Resources */,
@@ -295,8 +495,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8D998C2BE4863400E04AA3 /* QuoteResponse.swift in Sources */,
+				3D8D99832BE450B700E04AA3 /* QuoteEntity.swift in Sources */,
+				3D8D99BF2BE8FA5100E04AA3 /* SwipeableCollectionViewCellDelegate.swift in Sources */,
 				3D3B04682BDF015800D0B013 /* QuotesViewController.swift in Sources */,
+				3D8D99CA2BE9333B00E04AA3 /* TickersViewModelContract.swift in Sources */,
 				3D3B04642BDF015800D0B013 /* AppDelegate.swift in Sources */,
+				3D8D99952BE56B6A00E04AA3 /* QuotesStorageContract.swift in Sources */,
+				3D8D99972BE6752F00E04AA3 /* QuotesStorageManager.swift in Sources */,
+				3D8D99B22BE7A21300E04AA3 /* QuoteModel.swift in Sources */,
+				3D8D99DC2BE93D1200E04AA3 /* TickerRepositoryContract.swift in Sources */,
+				3D8D99A72BE6E5D100E04AA3 /* QuotesViewModelContract.swift in Sources */,
+				3D8D999B2BE67A7D00E04AA3 /* QuotesRepositoryContract.swift in Sources */,
+				3D8D99A32BE6E49200E04AA3 /* CoreDataManager.swift in Sources */,
+				3D8D99922BE548EE00E04AA3 /* QuotesWebSocketManager.swift in Sources */,
+				3D8A02212BEA4E1600204500 /* LifeCycleEvent.swift in Sources */,
+				3D8D99CE2BE9335200E04AA3 /* TickersViewController.swift in Sources */,
+				3D8A02252BEA5B1F00204500 /* LocalizedString.swift in Sources */,
+				3DAB26052BE237450031A7CF /* Model.xcdatamodeld in Sources */,
+				3D8D99D62BE933AF00E04AA3 /* TickerManager.swift in Sources */,
+				3D8D99BD2BE85EA800E04AA3 /* QuoteLogoView.swift in Sources */,
+				3D8D99B02BE7A1AB00E04AA3 /* QuoteCell.swift in Sources */,
+				3D8D99DA2BE93D0300E04AA3 /* TickerRepository.swift in Sources */,
+				3D8D99D02BE9336400E04AA3 /* TickerCell.swift in Sources */,
+				3D8D99C52BE9166A00E04AA3 /* ToastView.swift in Sources */,
+				3D8D99C82BE9332D00E04AA3 /* TickersViewContract.swift in Sources */,
+				3D8D99902BE548B200E04AA3 /* QuoteProviders.swift in Sources */,
+				3D8D99A02BE6849900E04AA3 /* DLError.swift in Sources */,
+				3D8D99BB2BE83F2500E04AA3 /* PercentView.swift in Sources */,
+				3D8D99D42BE933A500E04AA3 /* TickerProvider.swift in Sources */,
+				3D8D99AB2BE6EDC300E04AA3 /* QuotesViewContract.swift in Sources */,
+				3D8D99C12BE8FBDB00E04AA3 /* SwipeableCollectionViewCell.swift in Sources */,
+				3D8D99CC2BE9334700E04AA3 /* TickersViewModel.swift in Sources */,
+				3D8D99992BE67A6A00E04AA3 /* QuotesRepository.swift in Sources */,
+				3D8D99A52BE6E50900E04AA3 /* QuotesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +916,19 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		3DAB26032BE237450031A7CF /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DAB26042BE237450031A7CF /* Model.xcdatamodel */,
+			);
+			currentVersion = 3DAB26042BE237450031A7CF /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3D3B04582BDF015800D0B013 /* Project object */;
 }

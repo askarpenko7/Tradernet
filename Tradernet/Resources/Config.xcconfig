@@ -4,6 +4,3 @@
 APP_NAME = Tradernet
 APP_VERSION = 1.0
 APP_BUILD = 1
-
-// Socket settings
-SOCKET_URL = wss://wss.tradernet.com

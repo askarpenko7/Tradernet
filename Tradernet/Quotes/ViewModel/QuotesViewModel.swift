@@ -110,8 +110,7 @@ extension QuotesViewModel: QuotesViewModelContract {
     func addRecommendedQuotes() {
         let quotes = PreloadedDataHelper.fetchPreloadedData()
         repository.save(tickers: quotes)
-        view?.showLoading()
-        repository.subscribeToSavedQuotes()
+        connectToWebSocket()
     }
 }
 

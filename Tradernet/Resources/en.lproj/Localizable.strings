@@ -10,7 +10,6 @@
 "unexpected_error" = "Unexpected error";
 "disconnected" = "Disconnected";
 "unexpected_response" = "Unexpected Response";
-"no_saved_quotes" = "No saved quotes";
 "save_was_unsuccessful" = "Save was unsuccessful";
 "web-socket_error" ="WebSocket Error: @%";
 "error_fetching_quotes" = "Error fetching quotes: %@";

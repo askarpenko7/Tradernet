@@ -10,7 +10,6 @@
 "unexpected_error" = "Неожиданная ошибка";
 "disconnected" = "Соединение разорвано";
 "unexpected_response" = "Неожиданный ответ";
-"no_saved_quotes" = "Сохранённых котировок нет";
 "save_was_unsuccessful" = "Сохранение не удалось";
 "web-socket_error" ="Ошибка WebSocket: %@";
 "error_fetching_quotes" = "Ошибка получения котировок: %@";
@@ -20,3 +19,6 @@
 "delete_quote_alert_message" = "Вы уверены, что хотите удалить эту котировку?";
 "unknown" = "Неизвестно";
 "tickers" = "Тикеры";
+"empty_state_message" = "Котировки отсутствуют.\nДобавьте, чтобы следить за рынком!";
+"empty_state_button" = "Добавить котировки";
+"empty_state_recommended_button" = "Или добавить рекомендуемые котировки";

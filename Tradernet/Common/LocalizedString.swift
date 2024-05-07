@@ -12,7 +12,6 @@ enum LocalizedString: String {
     case unexpectedError = "unexpected_error"
     case disconnected
     case unexpectedResponse = "unexpected_response"
-    case noSavedQuotes = "no_saved_quotes"
     case saveWasUnsuccessful = "save_was_unsuccessful"
     case webSocketError = "web_socket_error"
     case errorFetchingQuotes = "error_fetching_quotes"

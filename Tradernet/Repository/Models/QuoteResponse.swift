@@ -26,6 +26,9 @@ struct QuoteResponse: Codable {
     /// chg (Double): Change in the price of the last trade in points.
     let priceChangePoints: Double?
 
+    /// Minimum price increment
+    let minStep: Double?
+
     enum CodingKeys: String, CodingKey {
         case ticker = "c"
         case name
@@ -33,6 +36,7 @@ struct QuoteResponse: Codable {
         case latestTradeExchange = "ltr"
         case lastTradePrice = "ltp"
         case priceChangePoints = "chg"
+        case minStep = "min_step"
     }
 
     init(from decoder: Decoder) throws {
@@ -46,6 +50,7 @@ struct QuoteResponse: Codable {
         self.latestTradeExchange = try container.decodeIfPresent(String.self, forKey: .latestTradeExchange)
         self.lastTradePrice = try container.decodeIfPresent(Double.self, forKey: .lastTradePrice)
         self.priceChangePoints = try container.decodeIfPresent(Double.self, forKey: .priceChangePoints)
+        self.minStep = try container.decodeIfPresent(Double.self, forKey: .minStep)
     }
 }
 
@@ -57,5 +62,6 @@ extension QuoteEntity {
         latestTradeExchange = response.latestTradeExchange
         lastTradePrice = response.lastTradePrice
         priceChangePoints = response.priceChangePoints
+        minStep = response.minStep
     }
 }

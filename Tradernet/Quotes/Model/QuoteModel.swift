@@ -29,12 +29,19 @@ struct QuoteModel {
     /// Helps to determine direction of change comparing to previous value
     let percentageChangeDirection: PercentageChangeDirection
 
+    /// Minimum price increment
+    let minStep: Double
+
     var nameAndExchangeFormatted: String {
         String(format: "%@ | %@", latestTradeExchange, name)
     }
 
     var lastTradeFormatted: String {
-        String(format: "%.3f ( %.2f )", lastTradePrice, priceChangePoints)
+        String(
+            format: "%@ ( %@ )",
+            roundAndFormat(value: lastTradePrice, minStep: minStep),
+            roundAndFormat(value: priceChangePoints, minStep: minStep)
+        )
     }
 
     var percentViewStyle: PercentView.Style {
@@ -53,6 +60,41 @@ struct QuoteModel {
         self.lastTradePrice = quote.lastTradePrice
         self.priceChangePoints = quote.priceChangePoints
         self.percentageChangeDirection = PercentageChangeDirection(rawValue: quote.percentageChangeDirection)
+        self.minStep = quote.minStep
+    }
+
+    ///// Determine the number of decimal places based on the minimum step
+    private func decimalPlaces(from minStep: Double) -> Int {
+        if minStep == 0 {
+            return 0
+        } else if minStep.remainder(dividingBy: 1) == 0 {
+            return 0
+        } else if minStep.description.contains("e-") {
+            if let range = minStep.description.range(of: "e-") {
+                return Int(minStep.description[range.upperBound...]) ?? 0
+            }
+            return 0
+        } else {
+            let parts = minStep.description.components(separatedBy: ".")
+            return parts.count > 1 ? parts[1].count : 0
+        }
+    }
+
+    /// Format the value based on the determined number of decimal places
+    private func roundAndFormat(value: Double, minStep: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.groupingSeparator = " "
+        formatter.decimalSeparator = "."
+        let decimals = decimalPlaces(from: minStep)
+        formatter.minimumFractionDigits = decimals
+        formatter.maximumFractionDigits = decimals
+
+        if let formattedString = formatter.string(from: NSNumber(value: value)) {
+            return formattedString
+        } else {
+            return "\(value)"
+        }
     }
 }
 

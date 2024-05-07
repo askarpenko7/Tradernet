@@ -48,6 +48,7 @@ private extension QuoteMO {
             "latestTradeExchange": entity.latestTradeExchange,
             "lastTradePrice": entity.lastTradePrice,
             "priceChangePoints": entity.priceChangePoints,
+            "minStep": entity.minStep
         ]
 
         let direction: String

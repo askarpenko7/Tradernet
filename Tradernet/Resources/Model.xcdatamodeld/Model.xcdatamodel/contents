@@ -3,6 +3,7 @@
     <entity name="Quote" representedClassName="QuoteMO" syncable="YES" codeGenerationType="class">
         <attribute name="lastTradePrice" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="latestTradeExchange" optional="YES" attributeType="String"/>
+        <attribute name="minStep" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="percentageChangeDirection" attributeType="String" defaultValueString="none"/>
         <attribute name="percentageChangeFromPreviousClose" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>

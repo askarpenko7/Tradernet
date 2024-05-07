@@ -25,6 +25,9 @@ struct QuoteEntity {
 
     /// chg (Double): Change in the price of the last trade in points.
     let priceChangePoints: Double?
+    
+    /// Minimum price increment
+    let minStep: Double?
 
     internal init(
         ticker: String,
@@ -32,7 +35,8 @@ struct QuoteEntity {
         percentageChangeFromPreviousClose: Double? = nil,
         latestTradeExchange: String? = nil,
         lastTradePrice: Double? = nil,
-        priceChangePoints: Double? = nil
+        priceChangePoints: Double? = nil,
+        minStep: Double? = nil
     ) {
         self.ticker = ticker
         self.name = name
@@ -40,5 +44,6 @@ struct QuoteEntity {
         self.latestTradeExchange = latestTradeExchange
         self.lastTradePrice = lastTradePrice
         self.priceChangePoints = priceChangePoints
+        self.minStep = minStep
     }
 }

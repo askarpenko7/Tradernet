@@ -15,4 +15,6 @@ protocol QuotesViewContract: AnyObject {
     func reloadRowAt(_ indexPath: IndexPath?)
     func moveRow(at indexPath: IndexPath?, to newIndexPath: IndexPath?)
     func showToast(with message: String)
+    func showStateView()
+    func hideStateView()
 }

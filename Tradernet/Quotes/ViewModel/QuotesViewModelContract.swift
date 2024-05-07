@@ -14,4 +14,5 @@ protocol QuotesViewModelContract: AnyObject {
     func notifyViewModel(with event: LifeCycleEvent)
     func quote(at indexPath: IndexPath) -> QuoteModel?
     func deleteQuote(at indexPath: IndexPath)
+    func addRecommendedQuotes()
 }

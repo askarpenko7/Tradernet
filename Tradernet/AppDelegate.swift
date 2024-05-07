@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let window = window else { return true }
 
         if isFirstLaunch() {
-            let tickers = fetchPreloadedData()
+            let tickers = PreloadedDataHelper.fetchPreloadedData()
             repository.save(tickers: tickers)
         }
 
@@ -67,21 +67,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         return false
-    }
-
-    private func fetchPreloadedData() -> [String] {
-        guard let url = Bundle.main.url(forResource: "preloaded_data", withExtension: "json"),
-              let data = try? Data(contentsOf: url)
-        else {
-            return []
-        }
-
-        do {
-            let tickers = try JSONDecoder().decode([String].self, from: data)
-            return tickers
-        } catch {
-            print("Failed to decode tickers: \(error)")
-            return []
-        }
     }
 }

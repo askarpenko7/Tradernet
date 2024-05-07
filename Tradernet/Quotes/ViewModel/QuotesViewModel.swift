@@ -25,7 +25,7 @@ final class QuotesViewModel: NSObject {
         super.init()
 
         self.repository.onError = { [weak self] error in
-            let message: String
+            var message = ""
             if let dlError = error as? DLError {
                 switch dlError {
                 case .encodingFailed:
@@ -35,9 +35,10 @@ final class QuotesViewModel: NSObject {
                 case .disconnected:
                     message = LocalizedString.disconnected.localized
                 case .unexpectedResponse:
-                    message = LocalizedString.unexpectedResponse.localized
+                    return
                 case .noSavedQuotes:
-                    message = LocalizedString.noSavedQuotes.localized
+                    self?.view?.showStateView()
+                    return
                 case .savingOperationFail:
                     message = LocalizedString.saveWasUnsuccessful.localized
                 }
@@ -105,6 +106,13 @@ extension QuotesViewModel: QuotesViewModelContract {
         guard let managedObject = fetchedResultsController?.object(at: indexPath) else { return }
         repository.delete(quote: managedObject)
     }
+
+    func addRecommendedQuotes() {
+        let quotes = PreloadedDataHelper.fetchPreloadedData()
+        repository.save(tickers: quotes)
+        view?.showLoading()
+        repository.subscribeToSavedQuotes()
+    }
 }
 
 // MARK: - NSFetchedResultsControllerDelegate
@@ -118,6 +126,7 @@ extension QuotesViewModel: NSFetchedResultsControllerDelegate {
         newIndexPath: IndexPath?
     ) {
         view?.hideLoading()
+        view?.hideStateView()
         switch type {
         case .insert:
             view?.insertRowAt(newIndexPath)

@@ -16,6 +16,8 @@
 		3D8A02212BEA4E1600204500 /* LifeCycleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A02202BEA4E1600204500 /* LifeCycleEvent.swift */; };
 		3D8A02252BEA5B1F00204500 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A02242BEA5B1F00204500 /* LocalizedString.swift */; };
 		3D8A02272BEA8D8500204500 /* preloaded_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A02262BEA8D8500204500 /* preloaded_data.json */; };
+		3D8A02292BEAD65D00204500 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A02282BEAD65D00204500 /* EmptyStateView.swift */; };
+		3D8A022C2BEAE06B00204500 /* PreloadedDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A022B2BEAE06B00204500 /* PreloadedDataHelper.swift */; };
 		3D8D99832BE450B700E04AA3 /* QuoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D99822BE450B700E04AA3 /* QuoteEntity.swift */; };
 		3D8D998C2BE4863400E04AA3 /* QuoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D998B2BE4863400E04AA3 /* QuoteResponse.swift */; };
 		3D8D99902BE548B200E04AA3 /* QuoteProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D998F2BE548B200E04AA3 /* QuoteProviders.swift */; };
@@ -84,6 +86,8 @@
 		3D8A02202BEA4E1600204500 /* LifeCycleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleEvent.swift; sourceTree = "<group>"; };
 		3D8A02242BEA5B1F00204500 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		3D8A02262BEA8D8500204500 /* preloaded_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = preloaded_data.json; sourceTree = "<group>"; };
+		3D8A02282BEAD65D00204500 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		3D8A022B2BEAE06B00204500 /* PreloadedDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadedDataHelper.swift; sourceTree = "<group>"; };
 		3D8D99822BE450B700E04AA3 /* QuoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteEntity.swift; sourceTree = "<group>"; };
 		3D8D998B2BE4863400E04AA3 /* QuoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteResponse.swift; sourceTree = "<group>"; };
 		3D8D998F2BE548B200E04AA3 /* QuoteProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteProviders.swift; sourceTree = "<group>"; };
@@ -219,6 +223,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		3D8A022A2BEAE04D00204500 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D8A022B2BEAE06B00204500 /* PreloadedDataHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		3D8D998D2BE5483600E04AA3 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +306,7 @@
 		3D8D99B62BE836F800E04AA3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3D8A022A2BEAE04D00204500 /* Utils */,
 				3D8D99B72BE8370C00E04AA3 /* Views */,
 				3D8A02242BEA5B1F00204500 /* LocalizedString.swift */,
 			);
@@ -309,6 +322,7 @@
 				3D8D99C02BE8FBDB00E04AA3 /* SwipeableCollectionViewCell.swift */,
 				3D8D99C42BE9166A00E04AA3 /* ToastView.swift */,
 				3D8A02202BEA4E1600204500 /* LifeCycleEvent.swift */,
+				3D8A02282BEAD65D00204500 /* EmptyStateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -521,9 +535,11 @@
 				3D8D99C52BE9166A00E04AA3 /* ToastView.swift in Sources */,
 				3D8D99C82BE9332D00E04AA3 /* TickersViewContract.swift in Sources */,
 				3D8D99902BE548B200E04AA3 /* QuoteProviders.swift in Sources */,
+				3D8A02292BEAD65D00204500 /* EmptyStateView.swift in Sources */,
 				3D8D99A02BE6849900E04AA3 /* DLError.swift in Sources */,
 				3D8D99BB2BE83F2500E04AA3 /* PercentView.swift in Sources */,
 				3D8D99D42BE933A500E04AA3 /* TickerProvider.swift in Sources */,
+				3D8A022C2BEAE06B00204500 /* PreloadedDataHelper.swift in Sources */,
 				3D8D99AB2BE6EDC300E04AA3 /* QuotesViewContract.swift in Sources */,
 				3D8D99C12BE8FBDB00E04AA3 /* SwipeableCollectionViewCell.swift in Sources */,
 				3D8D99CC2BE9334700E04AA3 /* TickersViewModel.swift in Sources */,

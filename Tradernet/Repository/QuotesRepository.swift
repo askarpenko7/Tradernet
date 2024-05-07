@@ -114,7 +114,11 @@ extension QuotesRepository: QuotesRepositoryContract {
         storageManager.fetchUniqueTickers { [weak self] result in
             switch result {
             case let .success(symbols):
-                self?.subscribe(to: symbols)
+                if symbols.count > 0 {
+                    self?.subscribe(to: symbols)
+                } else {
+                    self?.onError?(DLError.noSavedQuotes)
+                }
             case .failure:
                 self?.onError?(DLError.noSavedQuotes)
             }

@@ -19,6 +19,7 @@ final class QuotesViewController: UIViewController {
         indicator.hidesWhenStopped = true
         return indicator
     }()
+    private lazy var emptyStateView = EmptyStateView()
 
     // MARK: - Inits
 
@@ -58,6 +59,7 @@ final class QuotesViewController: UIViewController {
         }
 
         setupCollectionView()
+        setupEmptyState()
     }
 
     private func setupCollectionView() {
@@ -82,6 +84,16 @@ final class QuotesViewController: UIViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
         navigationItem.rightBarButtonItem = addButton
     }
+    
+    private func setupEmptyState() {
+        emptyStateView.isHidden = true
+        view.addSubview(emptyStateView)
+        emptyStateView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        emptyStateView.setAddButtonAction(target: self, action: #selector(addButtonTapped))
+        emptyStateView.setRecommendButtonAction(target: self, action: #selector(recommendButtonTapped))
+    }
 
     private func confirmDeletion(forItemAt indexPath: IndexPath) {
         let alert = UIAlertController(
@@ -102,6 +114,11 @@ final class QuotesViewController: UIViewController {
 
     @objc private func addButtonTapped() {
        presentTickerList()
+    }
+    
+    @objc private func recommendButtonTapped() {
+        viewModel.addRecommendedQuotes()
+        
     }
     
     private func presentTickerList() {
@@ -154,6 +171,17 @@ extension QuotesViewController: QuotesViewContract {
     func showToast(with message: String) {
         let toast = ToastView(message: message)
         toast.show(in: self)
+    }
+    
+    func showStateView() {
+        hideLoading()
+        collectionView.isHidden = true
+        emptyStateView.isHidden = false
+    }
+    
+    func hideStateView() {
+        collectionView.isHidden = false
+        emptyStateView.isHidden = true
     }
 }
 

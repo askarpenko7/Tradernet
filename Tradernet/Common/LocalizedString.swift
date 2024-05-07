@@ -22,6 +22,9 @@ enum LocalizedString: String {
     case delete
     case unknown
     case tickers
+    case emptyStateMessage = "empty_state_message"
+    case emptyStateButton = "empty_state_button"
+    case emptyStateRecommendedButton = "empty_state_recommended_button"
 
     var localized: String {
         return NSLocalizedString(rawValue, comment: "")

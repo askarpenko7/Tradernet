@@ -38,6 +38,7 @@ final class QuotesViewModel: NSObject {
                     return
                 case .noSavedQuotes:
                     self?.view?.showStateView()
+                    self?.repository.disconnect()
                     return
                 case .savingOperationFail:
                     message = LocalizedString.saveWasUnsuccessful.localized

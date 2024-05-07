@@ -10,6 +10,7 @@ import Foundation
 
 protocol QuotesRepositoryContract: AnyObject {
     var onError: ((Error) -> Void)? { get set }
+    var isConnected: Bool { get }
     
     func fetchQuotesController() -> NSFetchedResultsController<QuoteMO>
     func connectToWebSocket(completion: @escaping (Result<Void, Error>) -> Void)

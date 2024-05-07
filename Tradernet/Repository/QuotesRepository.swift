@@ -13,6 +13,7 @@ final class QuotesRepository {
     private let storageManager: QuotesStorageContract
 
     var onError: ((Error) -> Void)?
+    var isConnected: Bool = false
 
     init(
         webSocketManager: QuotesWebSocketContract,
@@ -81,17 +82,17 @@ extension QuotesRepository: QuotesRepositoryContract {
     func connectToWebSocket(completion: @escaping (Result<Void, Error>) -> Void) {
         var isCompleted = false // To guard against multiple completion calls
 
-        webSocketManager.onConnected = {
+        webSocketManager.onConnected = { [weak self] in
             guard !isCompleted else { return }
             isCompleted = true
-
+            self?.isConnected = true
             completion(.success(()))
         }
 
-        webSocketManager.onDisconnected = { error in
+        webSocketManager.onDisconnected = { [weak self] error in
             guard !isCompleted else { return }
             isCompleted = true
-
+            self?.isConnected = false
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -108,6 +109,7 @@ extension QuotesRepository: QuotesRepositoryContract {
 
     func disconnect() {
         webSocketManager.disconnect()
+        isConnected = false
     }
 
     func subscribeToSavedQuotes() {

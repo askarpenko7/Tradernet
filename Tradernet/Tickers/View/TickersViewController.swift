@@ -88,15 +88,19 @@ extension TickersViewController: TickersViewContract {
     }
 
     func showLoadingIndicator() {
-        tableView.isHidden = true
-        activityIndicator.startAnimating()
-        activityIndicator.isHidden = false
+        DispatchQueue.main.async {
+            self.tableView.isHidden = true
+            self.activityIndicator.startAnimating()
+            self.activityIndicator.isHidden = false
+        }
     }
 
     func hideLoadingIndicator() {
-        activityIndicator.stopAnimating()
-        activityIndicator.isHidden = true
-        tableView.isHidden = false
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
+            self.tableView.isHidden = false
+        }
     }
 
     func showError(message: String) {

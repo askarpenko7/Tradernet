@@ -22,6 +22,17 @@ final class TickerRepository: TickerRepositoryContract {
 
     func saveTicker(_ ticker: String) {
         quotesRepository?.save(tickers: [ticker])
-        quotesRepository?.subscribeToSavedQuotes()
+        if quotesRepository?.isConnected == false {
+            quotesRepository?.connectToWebSocket(completion: { [weak self] result in
+                switch result {
+                case .success:
+                    self?.quotesRepository?.subscribeToSavedQuotes()
+                case let .failure(failure):
+                    print(failure.localizedDescription)
+                }
+            })
+        } else {
+            quotesRepository?.subscribeToSavedQuotes()
+        }
     }
 }

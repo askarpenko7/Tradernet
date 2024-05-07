@@ -39,7 +39,7 @@ final class TickersViewController: UIViewController {
 
     private func setupViews() {
         title = LocalizedString.tickers.localized
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .mainBackground
         setupActivityIndicator()
         setupTableView()
         setupCloseButton()
@@ -90,10 +90,12 @@ extension TickersViewController: TickersViewContract {
     func showLoadingIndicator() {
         tableView.isHidden = true
         activityIndicator.startAnimating()
+        activityIndicator.isHidden = false
     }
 
     func hideLoadingIndicator() {
         activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
         tableView.isHidden = false
     }
 

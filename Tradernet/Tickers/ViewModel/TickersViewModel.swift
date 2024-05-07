@@ -20,13 +20,15 @@ final class TickersViewModel {
 
 extension TickersViewModel: TickersViewModelContract {
     func fetchTickers() {
-        repository.fetchTickers { result in
+        view?.showLoadingIndicator()
+        repository.fetchTickers { [weak self] result in
+            self?.view?.hideLoadingIndicator()
             switch result {
             case let .success(success):
-                self.tickers = success
-                self.view?.showTickers(success)
+                self?.tickers = success
+                self?.view?.showTickers(success)
             case let .failure(failure):
-                print(failure)
+                self?.view?.showError(message: failure.localizedDescription)
             }
         }
     }
